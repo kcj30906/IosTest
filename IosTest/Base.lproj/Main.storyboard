@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE storyboard PUBLIC "-//Apple//DTD STORYBOARD 3.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<storyboard version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IosTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="버튼을 눌러 통신을 시작하세요" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" translatesAutoresizingMaskIntoConstraints="NO" id="nVt-AX-eIw">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="250" verticalHuggingPriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymn-wV-N5u">
+                                <state key="normal" title="Call API"/>
+                                <connections>
+                                    <action selector="didTapTrigger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QF2-hb-kUi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nVt-AX-eIw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="2Mg-5q-9Gc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nVt-AX-eIw" secondAttribute="trailing" constant="24" id="4Rn-AZ-5wJ"/>
+                            <constraint firstItem="nVt-AX-eIw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-60" id="K92-fc-qdk"/>
+                            <constraint firstItem="ymn-wV-N5u" firstAttribute="top" secondItem="nVt-AX-eIw" secondAttribute="bottom" constant="32" id="Uvo-qM-vnI"/>
+                            <constraint firstItem="ymn-wV-N5u" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fCf-3n-tS1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JgU-DO-GCr"/>
+                    <connections>
+                        <outlet property="statusLabel" destination="nVt-AX-eIw" id="nIb-sE-Q7M"/>
+                        <outlet property="triggerButton" destination="ymn-wV-N5u" id="8xU-Wk-t2n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</storyboard>
