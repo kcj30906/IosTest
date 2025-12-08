@@ -3,6 +3,7 @@ import Alamofire
 
 /// 간단한 예제 실행기를 통해 Alamofire 호출 흐름을 보여줍니다.
 /// 실제 서버가 아닌 URLProtocol 스텁을 사용해 네트워크 없이도 동작합니다.
+@MainActor
 final class TodoExampleRunner {
     private let client: NetworkClient
     private let semaphore = DispatchSemaphore(value: 0)
@@ -51,6 +52,7 @@ final class TodoExampleRunner {
 
 // MARK: - Mock URL Protocol
 
+@MainActor
 final class MockURLProtocol: URLProtocol {
     static var requestHandler: ((URLRequest) throws -> (HTTPURLResponse, Data))?
 
