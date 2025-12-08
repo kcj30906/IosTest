@@ -23,6 +23,7 @@ C0B000101234567800000008 /* Todo.swift in Sources */ = {isa = PBXBuildFile; file
 C0B000101234567800000009 /* TodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A000101234567800000009 /* TodoService.swift */; };
 C0B00010123456780000000A /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A00010123456780000000A /* TodoViewModel.swift */; };
 C0B00010123456780000000B /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A00010123456780000000B /* TodoViewController.swift */; };
+C0B00010123456780000000C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C0P000101234567800000001 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@ C0A00010123456780000000B /* TodoViewController.swift */ = {isa = PBXFileReferenc
 isa = PBXFrameworksBuildPhase;
 buildActionMask = 2147483647;
 files = (
+ C0B00010123456780000000C /* Alamofire in Frameworks */,
 );
 runOnlyForDeploymentPostprocessing = 0;
 };
@@ -163,6 +165,9 @@ buildRules = (
 dependencies = (
 );
 name = IosTest;
+ packageProductDependencies = (
+ C0P000101234567800000001 /* Alamofire */,
+ );
 productName = IosTest;
 productReference = 13B07FAD1A68108700A75B9A /* IosTest.app */;
 productType = "com.apple.product-type.application";
@@ -196,8 +201,30 @@ projectRoot = "";
 targets = (
 13B07F861A680F5B00A75B9A /* IosTest */,
 );
+ packageReferences = (
+ C0P000101234567800000000 /* XCRemoteSwiftPackageReference "Alamofire" */,
+ );
 };
 /* End PBXProject section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+C0P000101234567800000000 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+ isa = XCRemoteSwiftPackageReference;
+ repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+ requirement = {
+ kind = upToNextMajorVersion;
+ minimumVersion = 5.9.0;
+ };
+};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+C0P000101234567800000001 /* Alamofire */ = {
+ isa = XCSwiftPackageProductDependency;
+ package = C0P000101234567800000000 /* XCRemoteSwiftPackageReference "Alamofire" */;
+ productName = Alamofire;
+};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin PBXResourcesBuildPhase section */
 13B07F9D1A68108700A75B9A /* Resources */ = {
