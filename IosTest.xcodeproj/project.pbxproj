@@ -12,6 +12,17 @@ objects = {
 13B07FBF1A68108700A75B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB31A68108700A75B9A /* Assets.xcassets */; };
 13B07FC01A68108700A75B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB41A68108700A75B9A /* Main.storyboard */; };
 13B07FC11A68108700A75B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* LaunchScreen.storyboard */; };
+C0B000101234567800000001 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A000101234567800000001 /* Coordinator.swift */; };
+C0B000101234567800000002 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A000101234567800000002 /* AppCoordinator.swift */; };
+C0B000101234567800000003 /* MainTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A000101234567800000003 /* MainTabCoordinator.swift */; };
+C0B000101234567800000004 /* IntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A000101234567800000004 /* IntroViewModel.swift */; };
+C0B000101234567800000005 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A000101234567800000005 /* IntroViewController.swift */; };
+C0B000101234567800000006 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A000101234567800000006 /* MainTabBarController.swift */; };
+C0B000101234567800000007 /* PlaceholderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A000101234567800000007 /* PlaceholderViewController.swift */; };
+C0B000101234567800000008 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A000101234567800000008 /* Todo.swift */; };
+C0B000101234567800000009 /* TodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A000101234567800000009 /* TodoService.swift */; };
+C0B00010123456780000000A /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A00010123456780000000A /* TodoViewModel.swift */; };
+C0B00010123456780000000B /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A00010123456780000000B /* TodoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +34,17 @@ objects = {
 13B07FB41A68108700A75B9A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 13B07FB51A68108700A75B9A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+C0A000101234567800000001 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinators/Coordinator.swift; sourceTree = "<group>"; };
+C0A000101234567800000002 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinators/AppCoordinator.swift; sourceTree = "<group>"; };
+C0A000101234567800000003 /* MainTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinators/MainTabCoordinator.swift; sourceTree = "<group>"; };
+C0A000101234567800000004 /* IntroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenes/Intro/IntroViewModel.swift; sourceTree = "<group>"; };
+C0A000101234567800000005 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenes/Intro/IntroViewController.swift; sourceTree = "<group>"; };
+C0A000101234567800000006 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenes/Main/MainTabBarController.swift; sourceTree = "<group>"; };
+C0A000101234567800000007 /* PlaceholderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenes/Main/Tabs/Common/PlaceholderViewController.swift; sourceTree = "<group>"; };
+C0A000101234567800000008 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenes/Main/Tabs/TabOne/Todo.swift; sourceTree = "<group>"; };
+C0A000101234567800000009 /* TodoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenes/Main/Tabs/TabOne/TodoService.swift; sourceTree = "<group>"; };
+C0A00010123456780000000A /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenes/Main/Tabs/TabOne/TodoViewModel.swift; sourceTree = "<group>"; };
+C0A00010123456780000000B /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenes/Main/Tabs/TabOne/TodoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +72,79 @@ children = (
 13B07FB01A68108700A75B9A /* AppDelegate.swift */,
 13B07FB11A68108700A75B9A /* SceneDelegate.swift */,
 13B07FB21A68108700A75B9A /* ViewController.swift */,
+C0G000101234567800000001 /* Coordinators */,
+C0G000101234567800000002 /* Scenes */,
 13B07FB31A68108700A75B9A /* Assets.xcassets */,
 13B07FB41A68108700A75B9A /* Main.storyboard */,
 13B07FB51A68108700A75B9A /* LaunchScreen.storyboard */,
 13B07FB61A68108700A75B9A /* Info.plist */,
 );
 path = IosTest;
+sourceTree = "<group>";
+};
+C0G000101234567800000001 /* Coordinators */ = {
+isa = PBXGroup;
+children = (
+C0A000101234567800000001 /* Coordinator.swift */,
+C0A000101234567800000002 /* AppCoordinator.swift */,
+C0A000101234567800000003 /* MainTabCoordinator.swift */,
+);
+path = Coordinators;
+sourceTree = "<group>";
+};
+C0G000101234567800000002 /* Scenes */ = {
+isa = PBXGroup;
+children = (
+C0G000101234567800000003 /* Intro */,
+C0G000101234567800000004 /* Main */,
+);
+path = Scenes;
+sourceTree = "<group>";
+};
+C0G000101234567800000003 /* Intro */ = {
+isa = PBXGroup;
+children = (
+C0A000101234567800000004 /* IntroViewModel.swift */,
+C0A000101234567800000005 /* IntroViewController.swift */,
+);
+path = Intro;
+sourceTree = "<group>";
+};
+C0G000101234567800000004 /* Main */ = {
+isa = PBXGroup;
+children = (
+C0A000101234567800000006 /* MainTabBarController.swift */,
+C0G000101234567800000005 /* Tabs */,
+);
+path = Main;
+sourceTree = "<group>";
+};
+C0G000101234567800000005 /* Tabs */ = {
+isa = PBXGroup;
+children = (
+C0G000101234567800000007 /* Common */,
+C0G000101234567800000006 /* TabOne */,
+);
+path = Tabs;
+sourceTree = "<group>";
+};
+C0G000101234567800000007 /* Common */ = {
+isa = PBXGroup;
+children = (
+C0A000101234567800000007 /* PlaceholderViewController.swift */,
+);
+path = Common;
+sourceTree = "<group>";
+};
+C0G000101234567800000006 /* TabOne */ = {
+isa = PBXGroup;
+children = (
+C0A000101234567800000008 /* Todo.swift */,
+C0A000101234567800000009 /* TodoService.swift */,
+C0A00010123456780000000A /* TodoViewModel.swift */,
+C0A00010123456780000000B /* TodoViewController.swift */,
+);
+path = TabOne;
 sourceTree = "<group>";
 };
 /* End PBXGroup section */
@@ -131,6 +220,17 @@ files = (
 13B07FBE1A68108700A75B9A /* ViewController.swift in Sources */,
 13B07FBC1A68108700A75B9A /* AppDelegate.swift in Sources */,
 13B07FBD1A68108700A75B9A /* SceneDelegate.swift in Sources */,
+C0B000101234567800000001 /* Coordinator.swift in Sources */,
+C0B000101234567800000002 /* AppCoordinator.swift in Sources */,
+C0B000101234567800000003 /* MainTabCoordinator.swift in Sources */,
+C0B000101234567800000004 /* IntroViewModel.swift in Sources */,
+C0B000101234567800000005 /* IntroViewController.swift in Sources */,
+C0B000101234567800000006 /* MainTabBarController.swift in Sources */,
+C0B000101234567800000007 /* PlaceholderViewController.swift in Sources */,
+C0B000101234567800000008 /* Todo.swift in Sources */,
+C0B000101234567800000009 /* TodoService.swift in Sources */,
+C0B00010123456780000000A /* TodoViewModel.swift in Sources */,
+C0B00010123456780000000B /* TodoViewController.swift in Sources */,
 );
 runOnlyForDeploymentPostprocessing = 0;
 };
