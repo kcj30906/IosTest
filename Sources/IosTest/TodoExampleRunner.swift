@@ -51,7 +51,6 @@ final class TodoExampleRunner {
 
 // MARK: - Mock URL Protocol
 
-@MainActor
 final class MockURLProtocol: URLProtocol {
     static var requestHandler: ((URLRequest) throws -> (HTTPURLResponse, Data))?
 
