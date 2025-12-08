@@ -15,7 +15,9 @@ final class MainTabCoordinator: Coordinator {
         tabOne.title = "탭 1"
         tabOne.tabBarItem = UITabBarItem(title: "탭 1", image: UIImage(systemName: "1.circle"), tag: 0)
 
-        let tabTwo = PlaceholderViewController(titleText: "탭 2")
+        let productService = ProductService()
+        let tabTwoViewModel = ProductListViewModel(productService: productService)
+        let tabTwo = ProductListViewController(viewModel: tabTwoViewModel)
         tabTwo.tabBarItem = UITabBarItem(title: "탭 2", image: UIImage(systemName: "2.circle"), tag: 1)
 
         let tabThree = PlaceholderViewController(titleText: "탭 3")
