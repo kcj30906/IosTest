@@ -1,7 +1,7 @@
 import Foundation
 import Alamofire
 
-struct Todo: Decodable, Equatable {
+struct Todo: Codable, Equatable {
     let id: Int
     let title: String
     let completed: Bool
