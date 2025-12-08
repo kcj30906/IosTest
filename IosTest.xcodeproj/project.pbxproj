@@ -24,6 +24,11 @@ C0B000101234567800000009 /* TodoService.swift in Sources */ = {isa = PBXBuildFil
 C0B00010123456780000000A /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A00010123456780000000A /* TodoViewModel.swift */; };
 C0B00010123456780000000B /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A00010123456780000000B /* TodoViewController.swift */; };
 C0B00010123456780000000C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C0P000101234567800000001 /* Alamofire */; };
+C0B00010123456780000000D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A00010123456780000000C /* Product.swift */; };
+C0B00010123456780000000E /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A00010123456780000000D /* ProductService.swift */; };
+C0B00010123456780000000F /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A00010123456780000000E /* ProductListViewModel.swift */; };
+C0B000101234567800000010 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A00010123456780000000F /* ProductListViewController.swift */; };
+C0B000101234567800000011 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A000101234567800000010 /* ProductDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@ C0A000101234567800000008 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFi
 C0A000101234567800000009 /* TodoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoService.swift; sourceTree = "<group>"; };
 C0A00010123456780000000A /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
 C0A00010123456780000000B /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+C0A00010123456780000000C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+C0A00010123456780000000D /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+C0A00010123456780000000E /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+C0A00010123456780000000F /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+C0A000101234567800000010 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +136,7 @@ isa = PBXGroup;
 children = (
 C0G000101234567800000007 /* Common */,
 C0G000101234567800000006 /* TabOne */,
+C0G000101234567800000008 /* TabTwo */,
 );
 path = Tabs;
 sourceTree = "<group>";
@@ -147,6 +158,18 @@ C0A00010123456780000000A /* TodoViewModel.swift */,
 C0A00010123456780000000B /* TodoViewController.swift */,
 );
 path = TabOne;
+sourceTree = "<group>";
+};
+C0G000101234567800000008 /* TabTwo */ = {
+isa = PBXGroup;
+children = (
+C0A00010123456780000000C /* Product.swift */,
+C0A00010123456780000000D /* ProductService.swift */,
+C0A00010123456780000000E /* ProductListViewModel.swift */,
+C0A00010123456780000000F /* ProductListViewController.swift */,
+C0A000101234567800000010 /* ProductDetailViewController.swift */,
+);
+path = TabTwo;
 sourceTree = "<group>";
 };
 /* End PBXGroup section */
@@ -258,6 +281,11 @@ C0B000101234567800000008 /* Todo.swift in Sources */,
 C0B000101234567800000009 /* TodoService.swift in Sources */,
 C0B00010123456780000000A /* TodoViewModel.swift in Sources */,
 C0B00010123456780000000B /* TodoViewController.swift in Sources */,
+C0B00010123456780000000D /* Product.swift in Sources */,
+C0B00010123456780000000E /* ProductService.swift in Sources */,
+C0B00010123456780000000F /* ProductListViewModel.swift in Sources */,
+C0B000101234567800000010 /* ProductListViewController.swift in Sources */,
+C0B000101234567800000011 /* ProductDetailViewController.swift in Sources */,
 );
 runOnlyForDeploymentPostprocessing = 0;
 };
