@@ -1,6 +1,6 @@
 import Foundation
 
-struct Todo: Decodable {
+struct TabOneTodo: Decodable {
     let userId: Int
     let id: Int
     let title: String
